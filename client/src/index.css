@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 255, 255, 255;
+  --secondary: 255, 255, 255;
+  --disabled: #8696a0;
+  --dark: 0, 0, 0;
+  --teaGreen: #dcf8c6;
+  --lightGreen: #25d366;
+  --tealGreenDark: #075e54;
+  --border: #2a3942;
+  --lightGray: #ece5dd
+}
+
+.dark {
+  --background: #111b21;
+  --secondary: #1f2c34;
+  --disabled: #8696a0;
+  --border: #2a3942;
+  --dark: #e9edef;
+  --teaGreen: rgb(19, 77, 55);
+  --lightGreen: rgb(33, 192, 99);
+  --tealGreenDark: rgb(216, 253, 210);
+  --lightGray: rgb(12, 22, 28);
+}
+
+*:focus {
+  @apply outline-tealGreen-dark;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
