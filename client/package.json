@@ -19,9 +19,9 @@
         "react-icons": "^5.3.0",
         "react-router-dom": "^6.26.1",
         "react-swipeable-views-react-18-fix": "^0.14.1",
-        "react-swipeable-views": "file:./src/react-swipeable-views/packages/react-swipeable-views",
-        "react-swipeable-core": "file:./src/react-swipeable-views/packages/react-swipeable-core",
-        "react-swipeable-views-utils": "file:./src/react-swipeable-views/packages/react-swipeable-views-utils"
+        "react-swipeable-views": "file:./src/react-swipeable-views/react-swipeable-views",
+        "react-swipeable-core": "file:./src/react-swipeable-views/react-swipeable-core",
+        "react-swipeable-views-utils": "file:./src/react-swipeable-views/react-swipeable-views-utils"
     },
     "devDependencies": {
         "@eslint/js": "^9.9.0",
