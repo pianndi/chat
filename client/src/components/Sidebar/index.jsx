@@ -1,6 +1,6 @@
 import { BsThreeDotsVertical } from "react-icons/bs";
 import Navigation from "../Navigation";
-import SwipeableViews from "/react-swipeable-views/packages/react-swipeable-views/src";
+import SwipeableViews from "react-swipeable-views/src";
 import HomePage from "./chats";
 import GroupPage from "./groups";
 import ContactPage from "./contacts";
@@ -28,14 +28,14 @@ export default function Sidebar() {
   return (
     <div className="sidebar h-full bg-background md:w-96 md:border-r border-borderColor">
       <div className="px-3 flex w-full h-full items-center justify-between border-b border-borderColor truncate lg:col-span-2">
-        <h1 className={"text-xl font-semibold truncate " + (index == defaultIndex && 'text-lightGreen')}>{title}</h1>
+        <h1 className={"text-2xl truncate " + (index == defaultIndex && 'text-lightGreen font-semibold')}>{title}</h1>
         <span className="flex gap-2 text-xl">
           <Button>
             <IoSearchOutline />
           </Button>
-          <Button>
+          {/* <Button>
             <BsThreeDotsVertical />
-          </Button>
+          </Button> */}
 
         </span>
       </div>

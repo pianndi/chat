@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { NextUIProvider } from '@nextui-org/react'
+import { ThemeProvider } from './contexts/ThemeContext'
 import App from './App'
 
 
@@ -10,9 +11,9 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter basename='/chat/'>
       <NextUIProvider>
-        <main className="dark text-dark">
+        <ThemeProvider>
           <App />
-        </main>
+        </ThemeProvider>
       </NextUIProvider>
     </BrowserRouter>
   </StrictMode>,
